@@ -7,7 +7,7 @@
     <title>Dettagli libro</title>
 </head>
 <body>
-    <h1>{{$libro->title}}</h1>
+    <h1>-{{$libro->title}}</h1>
     <p>{{$libro->trama}}</p>
     <span>Edizione: {{$libro->year}}</span>
 </body>
