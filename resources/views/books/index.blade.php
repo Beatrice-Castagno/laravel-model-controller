@@ -10,9 +10,8 @@
     <h1>Libri disponibili</h1>
         @foreach ($lista_libri as $libro) 
             <h2>{{$libro->title}}</h2>
-            <h4>{{$libro->author}}</h4>
-            <p>{{$libro->trama}}</p>
-            <span>{{$libro->prezzo}} &euro;</span>
+            <h4>di: {{$libro->author}}</h4>
+            <a href="{{route('books.show', $libro->id)}}">Dettagli</a>
         @endforeach 
 </body>
 </html>
